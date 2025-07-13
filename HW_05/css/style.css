@@ -1,7 +1,96 @@
-html{
-    background-color: antiquewhite;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-h1{
-    color: blue;
-    font-size: 40px;
+body {
+  background-color: #f0ffff;
+}
+
+.page {
+  width: 70%;
+  padding-bottom: 110px;
+  margin: auto;
+  background-color: #c5e3f5;
+  border: 0px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.article {
+  background-color: #f0f8ff;
+  margin: 15px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+.topic {
+  padding-top: 30px;
+  background-color: #e8e8dd;
+}
+h1 {
+  font-family: "Caveat";
+  font-style: italic;
+  text-align: left;
+  font-size: 70px;
+  color: #a52a2a;
+  margin-bottom: -40px;
+  padding-left: 50px;
+}
+
+h2 {
+  color: #a52a2a;
+  font-family: "Exo 2", sans-serif;
+  font-style: italic;
+  font-weight: 150;
+  padding-left: 50px;
+}
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(148, 144, 144);
+  font-style: italic;
+  text-align: center;
+  margin: 30px;
+  font-size: 20px;
+}
+
+h4 {
+  color: rgb(148, 144, 144);
+  font-family: "Exo 2", sans-serif, monospace;
+  font-style: italic;
+  text-align: justify;
+  font-weight: 150;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+.upper {
+  color: rgb(84, 53, 224);
+  margin-left: -20px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.time {
+  color: rgb(148, 144, 144);
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-size: 15px;
+  text-align: right;
+  padding-top: 15px;
+}
+
+a:link {
+  color: rgb(148, 144, 144);
+}
+a:visited {
+  color: rgb(148, 144, 144);
+}
+a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: #a52a2a;
+  text-decoration-style: solid;
 }
