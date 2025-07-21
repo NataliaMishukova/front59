@@ -3,13 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #f0ffff;
 }
 
 .page {
   width: 70%;
-  padding-bottom: 110px;
+  height:100vh;
   margin: auto;
   background-color: #c5e3f5;
   border: 0px;

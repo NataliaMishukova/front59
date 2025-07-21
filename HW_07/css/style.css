@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(240, 237, 233);
+  margin: 0;
+}
+.main {
+  /* padding-top:1px ; */
+  border-top: 1px solid lightblue;
+  width: 900px;
+  min-height: 100vh;
+  margin: auto;
+  background-color: rgb(173, 216, 230);
+  position: relative;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.hero {
+  width: 900px;
+  position: fixed;
+  z-index: 20;
+}
+.hero * {
+  padding-left: 50px;
+}
+
+h1 {
+  font-family: "Caveat", cursive;
+  font-size: 80px;
+  color: brown;
+  margin: 0;
+  margin-bottom: -40px;
+}
+
+.header-msg {
+  padding-top: 30px;
+  background-color: rgba(255, 235, 205, 0.6);
+  font-size: 1.2em;
+  color: brown;
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.day {
+  position: relative;
+  top: 150px;
+
+}
+.date {
+  color: gray;
+  text-align: center;
+}
+.news_title {
+  
+  height: 45px;
+  padding: 15px;
+  padding-top: 0;
+  padding-left: 0px;
+  align-items: center;
+  right: 18px;
+  bottom: 7px;
+  position:absolute;
+  z-index:9;
+}
+
+.column {
+  position: absolute;
+  width: 450px;
+  padding-top: 50px;
+}
+.left {
+  top: 0;
+  left: 0;
+}
+.right {
+  top: 0;
+  left: 450px;
+}
+
+.news {
+  background-color: aliceblue;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+/* этот стиль работает для блока новость на который навели указатель */
+.news:hover {
+  bottom: 3px;
+  left: 3px;
+}
+
+.tag {
+  text-transform: uppercase;
+  color: blue;
+  text-align: left;
+  font-weight: 200;
+  font-size: 0.7em;
+   margin:10px;
+   margin-bottom: 5px;
+}
+
+.news h3 {
+ height: 45px;
+  padding-left: 40px;
+  font-family: "Exo 2", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+ 
+}
+.time {
+  text-align: right;
+  color: gray;
+  font-size: 0.7em;
+  position: absolute;
+  right: 18px;
+  bottom: 7px;
+  margin-top:5px;
+  width:400px;
+  /* margin-top: 20px; */
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline solid 2px;
+  text-decoration-color: brown;
+}
