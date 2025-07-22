@@ -18,7 +18,7 @@ body {
   width: 80%;
   height: 70px;
   top: 0px;
-  background-color: rgb(251, 190, 210);
+  background-color: #7b886f;
   position: relative;
   z-index: 20;
   position: fixed;
@@ -57,20 +57,20 @@ body {
   right: 0px;
   width: 350px;
   height: 50px;
-  border-left: 2px solid rgb(32, 32, 32);
+  border-left: 2px solid #feffa5;
 }
 .title2 h1 {
   font-family: "Jost";
   font-style: normal;
   font-size: 20px;
-  color: rgb(32, 32, 32);
+  color: #feffa5;
   text-align: center;
 }
 h1 {
   font-family: "Jost";
   font-style: normal;
   font-size: 45px;
-  color: #3b3b3b;
+  color: #feffa5;
 }
 /*---------блок 1-----------*/
 
@@ -102,7 +102,7 @@ h1 {
 .buttom{
     position:absolute;
     padding:20px;
-    background-color: rgb(251, 190, 210); 
+    background-color:  #7b886f; 
     right:40px;
     bottom: 40px;
     border-radius: 10% 10% 10% 10%;
@@ -114,7 +114,7 @@ h1 {
 a{
     font-family: "Jost";
     font-size: 20px;  
-    color: #000000;
+    color: #feffa5;
     text-decoration: none;
 }
 a:link {
@@ -130,7 +130,7 @@ a:hover{
     
 }
 .buttom:hover{
-background-color: rgb(255, 0, 84); 
+background-color: #feffa5; 
 }
 
 h2{
@@ -198,7 +198,7 @@ h3 {
 .footer {
   position: relative;
   height: 180px;
-  background-color: rgb(255, 0, 84);
+  background-color: #7b886f;
   border-top: 1px solid grey;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
 }

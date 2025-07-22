@@ -1,0 +1,58 @@
+/* селектор все элементы на странице*/
+* {
+  background-color: rgb(26, 4, 53);
+}
+
+body {
+  color: white;
+  background: radial-gradient(
+      circle at 10% 20%,
+      rgba(248, 117, 242, 0.3) 0%,
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 30%,
+      rgba(97, 208, 255, 0.4) 0%,
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 50% 80%,
+      rgba(255, 225, 113, 0.5) 0%,
+      transparent 30%
+    );
+  background-blend-mode: overlay;
+}
+h1,
+h2,
+h3,
+.job {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.job {
+  background-color: rgb(247, 246, 246, 0);
+}
+
+/* все элементы p с классом job */
+.job {
+  color: rgb(249, 37, 235);
+}
+h4.uper {
+  color: #ff6c1e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  color: rgb(249, 37, 235);
+}
+#green {
+    color: #1eff44; 
+}
