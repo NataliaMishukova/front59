@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=".\css\style.css" />
     <title>HomeWork_08</title>
   </head>
   <body>
@@ -10,65 +11,94 @@
     <form action="#" method="get">
       <fieldset>
         <legend>Как с вами связаться</legend>
-        <label for="id_name">Ваше имя:</label>
-        <input type="text" name="name_name" id="id_name" required/><br /><br />
+
+        <label for="name">Ваше имя:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Ваше имя"
+          required
+        />
+        <br /><br />
 
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required /><br /><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="box@mail.com"
+          required
+        /><br /><br />
 
-        <label for="tel">Телефон:</label>
-        <input type="tel" name="tel" id="tel" required/><br /><br />
+        <label for="phone">Телефон:</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="+49 777 777 200"
+          required
+        /><br /><br />
 
         <fieldset>
+          <legend>Данные контракта</legend>
           <label for="date">Дата:</label>
-          <input type="date" name="date" id="date" required/><br /><br />
+          <input type="date" name="date" id="date" required /><br /><br />
           <label for="numer">Номер:</label>
-          <input type="numer" name="numer" id="numer" /><br /><br />
+          <input
+            type="numer"
+            name="numer"
+            id="numer"
+            placeholder="K/289/13"
+          /><br /><br />
         </fieldset>
       </fieldset>
-
-      <legend>Оцените наш сервис:</legend>
+      <br />
+      <!-- 1й вопрос -->
+      <label>Оцените наш сервис:</label><br />
       <label>
-        <input type="radio" name="servis" id="servis" required />
+        <!-- radio -можем выбрать только один вариант ответа-->
+        <input type="radio" name="service" id="servis" required />
         Хорошо </label
-      ><br /><br />
+      ><br /><!-- service-название нашего radio -->
       <label>
-        <input type="radio" name="servis" id="servis" />
+        <input type="radio" name="service" id="servis" />
         Удовлитворительно </label
-      ><br /><br />
+      ><br />
       <label>
-        <input type="radio" name="servis" id="servis" />
+        <input type="radio" name="service" id="servis" />
         Плохо </label
       ><br /><br />
-
-      <legend>Kакие каналы связи вы предпочитаете?</legend>
+      <!-- 2й вопрос -->
+      <label>Kакие каналы связи вы предпочитаете?</label><br />
       <label>
-        <input type="checkbox" name="channels" id="channels" required />
+        <!-- checkbox -можем выбрать НЕСКОЛЬКО  вариантов ответа-->
+        <input type="checkbox" name="channels" id="email" required />
         Email </label
-      ><br /><br />
+      ><br />
       <label>
-        <input type="checkbox" name="channels" id="channels" />
+        <input type="checkbox" name="channels" id="phone" />
         Телефон </label
-      ><br /><br />
+      ><br />
       <label>
-        <input type="checkbox" name="channels" id="channels" />
+        <input type="checkbox" name="channels" id="message" />
         Мессенджеры </label
       ><br /><br />
-
-      <legend>Как часто используете наш сервис?</legend>
+      <!-- 3й вопрос -->
+      <label>Как часто используете наш сервис?</label><br />
       <label>
-        <input type="radio" name="oft" id="oft" required/>
+        <input type="radio" name="oft" id="first" required />
         Перовый раз </label
-      ><br /><br />
+      ><br />
       <label>
-        <input type="radio" name="oft" id="oft" />
+        <input type="radio" name="oft" id="sometimes" />
         Иногда </label
-      ><br /><br />
+      ><br />
       <label>
         <input type="radio" name="oft" id="oft" />
         Часто </label
       ><br /><br />
-
+      <!-- Тема обращения -->
       <label for="topic">Тема обращения:</label>
       <select name="topic" id="topic">
         <option value="question">Вопрос</option>
@@ -77,8 +107,8 @@
         <option value="return">Возврат</option>
         <option value="sales">Скидки</option></select
       ><br /><br />
-
-      <legend>Сообщение:</legend>
+      <!-- Сообщение -->
+      <label>Сообщение:</label>
       <textarea
         name="message"
         id="message"
@@ -87,14 +117,14 @@
         placeholder="напишите ваше сообщение здесь..."
       ></textarea
       ><br /><br />
-
+      <!-- Согласие -->
       <fieldset>
         <label>
           <input type="checkbox" name="agree" id="agree" required />
           даю согласие на обработку персональных данных
         </label>
       </fieldset>
-      <button type="submit">Отправить</button>    
+      <button type="submit">Отправить</button>
     </form>
   </body>
 </html>
