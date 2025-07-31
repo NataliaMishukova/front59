@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  width: 100%;
+  border: 1px gray solid;
+}
+body {
+  background-color: antiquewhite;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(251, 252, 252);
+}
+.block {
+  background-color: rgb(128, 126, 126);
+  width: 25%;
+  padding: 10px;
+}
+
+h1 {
+  color: white;
+}
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 24px;
+  }
+ 
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 12px;
+  }
+
+  .container {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(251, 252, 252);
+  }
+  .block {
+    width: 100%;
+    border: 1px solid white;
+  }
+}
+
+/*C помощью media query реализуйте следующее:
+при размере экрана шире 1400px шрифт должен быть 24px
+при размере экрана шире 768px шрифт должен быть 20px
+при размере экрана менее 768px шрифт должен быть 16px
+при размере экрана менее 576px шрифт должен быть 12px и блоки должны выстраиваться в столбик (заполняя ширину экрана). Ну например так:
+*/
