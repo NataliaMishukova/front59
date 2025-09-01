@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+  font-family: "Jost";
+}
+body {
+background-image: url("../pic/font2.jpg");
+   background-position: center; 
+   background-repeat: no-repeat;
+   background-size: cover;
+     
+}
+
+.gallery .card {
+background: -webkit-linear-gradient(90deg, rgb(237, 209, 226, 0.7),rgb(255, 253, 250, 0.7)); 
+  text-align: justify;
+  box-shadow: rgb(192, 190, 190) 0.2em 0.1em 0.8em;
+ 
+}
+
+h1 {
+  color: rgb(234, 13, 219);
+  font-style: bold;
+}
+p {
+  color: rgb(88, 87, 88);
+
+}
