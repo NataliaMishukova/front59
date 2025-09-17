@@ -1,96 +1,110 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-html {
-  background: linear-gradient(40deg, #c08ca6, #fae2dd);
-  background-repeat: no-repeat;
-  height: 100vh;
+
+body {
+  background-color: #ffffff;
 }
 
-.main {
-  /* padding-top:1px ; */
-
-  width: 70%;
-  min-height: 100vh;
-  margin: auto;
-  padding: 60px 60px 60px 60px;
-  background-color: rgb(249, 245, 243, 0.8);
-  position: relative;
-  border-radius: 12px;
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
-  font-family: "Courier Prime", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.header {
-  background-image: url(./img/31.png);
-  background-color: rgba(234, 11, 226, 0.8);
-  background-size: 100%;
+/*задаем параметры блока для каждого forester*/
+.cars div {
+  width: 360px;
+  height: 360px;
+  background-color: #ffffff;
+  margin: 20px;
+  /*outline аналог bordera и добавляет линию вовнутрь*/
+  outline: 1px solid black;
+  background-image: url("pic1.jpg");
+  /*добавляем свойство*/
+  background-size: 90%;
   background-repeat: no-repeat;
+  /*background-position позволяет правильно оцентровать картинку*/
   background-position: center;
-  border-radius: 12px;
-  height: 250px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-h1 {
-  height: 250px;
-  width: 100%;
-  font-weight: 700;
-  font-size: 40px;
-  border-radius: 12px;
-  background-color: rgba(250, 250, 250, 0.4);
-  text-align: center;
-  align-items: center;
-  padding-top: 100px;
-  color: #434343;
-  background: linear-gradient(90deg, #ff8a00, #e52e71, #9400d3);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 3em;
-  font-weight: bold;
+  transition: 0.5s;
+   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
 }
 
-.block1 {
+.cars {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
   flex-wrap: wrap;
-  border-radius: 12px;
-  width: 100%;
-  padding: 0px 0px 25px 0px;
-  margin: 25px 0px 0px 0px;
-  flex-direction: row;
-}
-.header-block {
-  display: flex;
-  align-items: center;
-
-  width: 100%;
+  justify-content: space-around;
+  /*position это свойство позволяет двигать элементы*/
+  position: relative;
 }
 
-h2 {
-  color: #434343;
+/*чтобы картинка двигалась при новедении, то надо добавить hover*/
+/*мы ссылаемся на все блоки div которые лежат в классе cars*/
+
+
+.cars div:hover {
+  background-size: 150%;
+  background-position: right 120% top 50%;
+  /*transition чтобы картинга двигалась плавно*/
+  transition: 0.5s;
+
+  /*при наведении мышкой на блок div который лежит в  блоке div который лежат в классе cars*/
 }
 
-.homework {
-  background-color: #fae2dd;
-  padding: 15px 20px 15px 20px;
-  margin: 25px 10px 0 0;
-
-  gap: 20px;
-
-  border: 1px solid #c08ca6;
-  border-radius: 12px;
-}
-a {
+.cars div .descr {
+  position: relative;
+  /*свойство строчных (строятся в колонку) и блочных(занимают всю строку) тегов*/
+  display: inline-block;
+  color: blue;
   text-decoration: none;
-  white-space: nowrap;
+  border: 2px solid blue;
+  padding: 10px;
+  border-radius: 4px;
+  /*opacity чтобы кнопка была видна только при наведении мышки*/
+  opacity: 0;
+  top: 270px;
+  left: 20px;
+  transition: 0.5s;
+}
+
+.cars div h2{
+  position: relative;
+  top: 20px;
+  left: 20px;
+  
+}
+
+.cars div:hover .descr {
+  opacity: 1;
+  /*в нормальном состоянии значение 0, а при наведении  мышки значение 1(кнопку становится видно)*/
+}
+/*-при наведении на ссылку descr при использовании hover в классе cars*/
+
+.cars div .descr:hover {
+  background-color: blue;
+  color: white; /*ничего не работает, так как нет еще одного отдельного селектора, влияющего на появлении кнопки^^.cars div:hover .descr*/
+}
+@media (max-width: 600px) {
+  form,
+  .buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+    padding: 0 1rem;
+  }
+
+  input[type="text"], button, #clear-btn, #clear-done-btn {
+    width: 100%;
+    font-size: 1rem;
+    box-sizing: border-box;
+    max-width: 93vw;
+  }
+
+  ul#list-book {
+    max-width: 98vw;
+    padding: 0 1vw;
+  }
+
+  li {
+    font-size: 1rem;
+    padding: 10px 10px;
+  }
+
+  h1 {font-size: 1.3rem;}
 }
