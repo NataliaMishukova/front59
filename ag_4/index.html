@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📽</text></svg>"
+    />
+    <title>Страница домашней работы - Movie</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo" aria-label="КиноПоиск">
+          <a href="/frontend_cohort57/" class="logo-link"></a>
+        </div>
+        <div class="play">Онлайн-кинотеатр</div>
+        <div class="oscar">Оскар-2023</div>
+        <div class="search">
+          <button type="button" class="svg_search_icon" aria-label="Найти">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class=""
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              ></path>
+            </svg>
+          </button>
+          <input placeholder="Фильмы, сериалы, персоны" type="text" />
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article class="content-wrapper">
+        <!-- Основной контент -->
+        <div class="main-content">
+          <!-- Блок "Новинки" -->
+          <section aria-labelledby="new-movies-heading">
+            <h2 class="movies-title new">Новинки</h2>
+            <div class="new-movies">
+              <div class="poster">
+                <div class="flip-container">
+                  <div class="flipper">
+                    <!-- Передняя сторона -->
+                    <div class="front">
+                      <figure>
+                        <img
+                          src="../../assets/images_hw_05/movie1.webp"
+                          alt="Бешенство (2023)"
+                        />
+                      </figure>
+                      <span class="rating midle">6.8</span>
+                      <button class="ticket">Билеты</button>
+                    </div>
+
+                    <!-- Задняя сторона -->
+                    <div class="back">
+                      <h3 class="film-title">Бешенство (2023)</h3>
+                      <div class="descr">
+                        В тайге разгорается эпидемия бешенства среди диких
+                        животных. В это время отец привозит своего сына в
+                        охотничий домик, чтобы передержать его там во время
+                        ломки. Вместе они оказываются в смертельной западне.
+                      </div>
+                      <button class="ticket">Билеты</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="poster">
+                <div class="flip-container">
+                  <div class="flipper">
+                    <!-- Передняя сторона -->
+                    <div class="front">
+                      <figure>
+                        <img
+                          src="../../assets/images_hw_05/xolodnoe_leto_300x450.webp"
+                          alt="Холодное лето пятьдесят третьего... (1987)"
+                        />
+                      </figure>
+                      <span class="rating high">8.2</span>
+                      <button class="ticket">Билеты</button>
+                    </div>
+
+                    <!-- Задняя сторона -->
+                    <div class="back">
+                      <h3 class="film-title">
+                        Холодное лето пятьдесят третьего... (1987)
+                      </h3>
+                      <div class="descr">
+                        1953 год. Двое политических ссыльных вступают в схватку
+                        с бандой амнистированных уголовников.
+                      </div>
+                      <button class="ticket">Билеты</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="poster">
+                <div class="flip-container">
+                  <div class="flipper">
+                    <!-- Передняя сторона -->
+                    <div class="front">
+                      <figure>
+                        <img
+                          src="../../assets/images_hw_05/movie2.webp"
+                          alt="Нюрнберг (2023)"
+                        />
+                      </figure>
+                      <span class="rating midle">6.0</span>
+                      <button class="ticket">Билеты</button>
+                    </div>
+
+                    <!-- Задняя сторона -->
+                    <div class="back">
+                      <h3 class="film-title">Нюрнберг (2023)</h3>
+                      <div class="descr">
+                        1945 год. В Нюрнберге начинает работу Международный
+                        военный трибунал. На суд, который впоследствии назовут
+                        Процессом Века, съезжается огромное количество людей со
+                        всего мира: город переполнен журналистами, адвокатами,
+                        переводчиками, свидетелями и множеством участников и
+                        сотрудников процесса. Среди тех, кто приезжает в
+                        Нюрнберг работать на Процессе — Игорь Волгин. Он молод,
+                        но прошел войну, имеет награды, владеет несколькими
+                        иностранными языками. Волгину предстоит быть
+                        переводчиком в составе советской делегации под
+                        руководством полковника Мигачева. Однажды на улице
+                        Нюрнберга Волгин встречает юную русскую девушку Лену. Их
+                        зарождающееся чувство пройдет через множество испытаний,
+                        но любовь — это единственное, что во все времена спасало
+                        мир от расчеловечивания.
+                      </div>
+                      <button class="ticket">Билеты</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="poster">
+                <div class="flip-container">
+                  <div class="flipper">
+                    <!-- Передняя сторона -->
+                    <div class="front">
+                      <figure>
+                        <img
+                          src="../../assets/images_hw_05/milja_300x450.webp"
+                          alt="Зеленая миля (1999)"
+                        />
+                      </figure>
+                      <span class="rating high">9.1</span>
+                      <button class="ticket">Билеты</button>
+                    </div>
+
+                    <!-- Задняя сторона -->
+                    <div class="back">
+                      <h3 class="film-title">Зеленая миля (1999)</h3>
+                      <div class="descr">
+                        Пол Эджкомб — начальник блока смертников в тюрьме
+                        «Холодная гора», каждый из узников которого однажды
+                        проходит «зеленую милю» по пути к месту казни. Пол
+                        повидал много заключённых и надзирателей за время
+                        работы. Однако гигант Джон Коффи, обвинённый в страшном
+                        преступлении, стал одним из самых необычных обитателей
+                        блока.
+                      </div>
+                      <button class="ticket">Билеты</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="poster">
+                <div class="flip-container">
+                  <div class="flipper">
+                    <!-- Передняя сторона -->
+                    <div class="front">
+                      <figure>
+                        <img
+                          src="../../assets/images_hw_05/interstelar_300x450.webp"
+                          alt="Интерстеллар (2014)"
+                        />
+                      </figure>
+                      <span class="rating high">8.7</span>
+                      <button class="ticket">Билеты</button>
+                    </div>
+
+                    <!-- Задняя сторона -->
+                    <div class="back">
+                      <h3 class="film-title">Интерстеллар (2014)</h3>
+                      <div class="descr">
+                        Когда засуха, пыльные бури и вымирание растений приводят
+                        человечество к продовольственному кризису, коллектив
+                        исследователей и учёных отправляется сквозь червоточину
+                        (которая предположительно соединяет области
+                        пространства-времени через большое расстояние) в
+                        путешествие, чтобы превзойти прежние ограничения для
+                        космических путешествий человека и найти планету с
+                        подходящими для человечества условиями.
+                      </div>
+                      <button class="ticket">Билеты</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="poster">
+                <div class="flip-container">
+                  <div class="flipper">
+                    <!-- Передняя сторона -->
+                    <div class="front">
+                      <figure>
+                        <img
+                          src="../../assets/images_hw_05/triger_375x562.webp"
+                          alt="Триггер (сериал 2018 – ...)"
+                        />
+                      </figure>
+                      <span class="rating high">8.5</span>
+                      <button class="ticket">Билеты</button>
+                    </div>
+
+                    <!-- Задняя сторона -->
+                    <div class="back">
+                      <h3 class="film-title">Триггер (сериал 2018 – ...)</h3>
+                      <div class="descr">
+                        Психолог Артём Стрелецкий — сторонник шоковой терапии в
+                        лечении больных. Он считает, что единственный способ для
+                        человека решить свои проблемы — это понять себя и
+                        перестать себе врать. Если большинство психологов
+                        нянчатся с клиентами, по полгода выслушивают жалобы на
+                        жизнь, сочувствуют и получают при этом немалые деньги за
+                        цикл сеансов, то Артём постоянно провоцирует клиентов:
+                        оскорбляет их, смеется над ними, намеренно выталкивает
+                        из зоны комфорта. Практика Артема процветает, пока один
+                        из его пациентов не кончает жизнь самоубийством.
+                      </div>
+                      <button class="ticket">Билеты</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="poster">
+                <div class="flip-container">
+                  <div class="flipper">
+                    <!-- Передняя сторона -->
+                    <div class="front">
+                      <figure>
+                        <img
+                          src="../../assets/images_hw_05/ogni_300x450.webp"
+                          alt="Горные огни (2017)"
+                        />
+                      </figure>
+                      <span class="rating low">4.5</span>
+                      <button class="ticket">Билеты</button>
+                    </div>
+
+                    <!-- Задняя сторона -->
+                    <div class="back">
+                      <h3 class="film-title">Горные огни (2017)</h3>
+                      <div class="descr">
+                        Группа студентов американского вуза приезжает в горную
+                        алтайскую деревушку навестить родственников своей бывшей
+                        одногруппницы Карины – девушки, родом из этих мест,
+                        убитой в Америке при загадочных обстоятельствах. Брат
+                        Карины оказывается местным шаманом. После радушного
+                        приёма он предлагает друзьям принять участие в ритуале
+                        примирения, чтобы символически выпустить дух Карины на
+                        небеса. Но что-то идёт не так, и вместо доброго духа
+                        Карины друзья высвобождают злой дух – Курюм. Он начинает
+                        вселяться то в одного, то в другого героя, заставляя их
+                        безжалостно убивать друг друга. Причина этому могла быть
+                        только одна – убийца Карины присутствовал на церемонии.
+                        Чтобы выжить, друзья должны вычислить, кто из них
+                        виновен в смерти девушки.
+                      </div>
+                      <button class="ticket">Билеты</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Пагинация -->
+            <nav class="pagination" aria-label="Пагинация">
+              <ul class="pagination-list">
+                <li>
+                  <button
+                    class="pagination-prev"
+                    aria-label="Предыдущая страница"
+                    disabled
+                  >
+                    ‹
+                  </button>
+                </li>
+                <li>
+                  <button class="pagination-page active" aria-current="page">
+                    1
+                  </button>
+                </li>
+                <li><button class="pagination-page">2</button></li>
+                <li><button class="pagination-page">3</button></li>
+                <li><span class="pagination-ellipsis">…</span></li>
+                <li><button class="pagination-page">10</button></li>
+                <li>
+                  <button
+                    class="pagination-next"
+                    aria-label="Следующая страница"
+                  >
+                    ›
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </section>
+
+          <!-- Блок "Популяные" -->
+          <section aria-labelledby="top-movies-heading">
+            <h2 class="movies-title top">Популяные</h2>
+            <div class="top-movies">
+              <div class="movie-list-item">
+                <a href="#" class="movie-list-rootlink">
+                  <img
+                    class="movie-list-img"
+                    alt="Лев"
+                    src="../../assets/images_hw_05/thumb_leo_72x108.webp"
+                /></a>
+                <div class="movie-list-content">
+                  <div class="movie-list-upper">
+                    <div class="movie-list-main">
+                      <div class="movie-list-main-title">
+                        <span>Лев</span>
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span>Lion</span><span>, <i>2016, 1 ч 58 мин</i></span>
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span> <strong>Страна:</strong>Австралия</span>
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span><strong>Жанры:</strong> драма</span>
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span
+                          ><strong>Режиссёр:</strong>
+                          <a href="../../homeworks/hw_06/index.html"
+                            >Гарт Дэвис</a
+                          ></span
+                        >
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span
+                          ><strong>В ролях:</strong>
+                          <a href="../../homeworks/hw_06/index.html">
+                            Дев Патель</a
+                          >,
+                          <a href="../../homeworks/hw_06/index.html">
+                            Николь Кидман</a
+                          ></span
+                        >
+                      </div>
+                    </div>
+                    <div class="movie-list-main-interactive">
+                      <div class="movie-list-rating-root">
+                        <div class="movie-list-rating-column">
+                          <div class="movie-list-rating-value-block">
+                            <span
+                              class="movie-list-rating-left hung-left"
+                            ></span>
+                            <span class="rating-value hung">8.2</span>
+                            <span
+                              class="movie-list-rating-right hung-right"
+                            ></span>
+                          </div>
+                          <span class="rating-value-count">275 013</span>
+                        </div>
+                      </div>
+                      <div class="movie-list-buttons">
+                        <button type="button" class="movie-list-ticket">
+                          <span>Купить билет</span>
+                        </button>
+
+                        <button type="button" class="movie-list-trailer">
+                          <span>Смотреть трейлер</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-list-item">
+                <a href="#" class="movie-list-rootlink">
+                  <img
+                    class="movie-list-img"
+                    alt="Семь жизней/Seven Pounds"
+                    src="../../assets/images_hw_05/thumbSevenPounds300x450.webp"
+                /></a>
+                <div class="movie-list-content">
+                  <div class="movie-list-upper">
+                    <div class="movie-list-main">
+                      <div class="movie-list-main-title">
+                        <span>Семь жизней</span>
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span>Seven Pounds</span
+                        ><span>, <i>2008, 1 ч 58 мин</i></span>
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span> <strong>Страна:</strong>США</span>
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span><strong>Жанры:</strong> драма</span>
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span
+                          ><strong>Режиссёр:</strong>
+                          <a href="../../homeworks/hw_06/index.html"
+                            >Габриэле Муччино</a
+                          ></span
+                        >
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span
+                          ><strong>В ролях:</strong>
+                          <a href="../../homeworks/hw_06/index.html">
+                            Уилл Смит</a
+                          >,
+                          <a href="../../homeworks/hw_06/index.html">
+                            Розарио Доусон</a
+                          ></span
+                        >
+                      </div>
+                    </div>
+                    <div class="movie-list-main-interactive">
+                      <div class="movie-list-rating-root">
+                        <div class="movie-list-rating-column">
+                          <div class="movie-list-rating-value-block">
+                            <span class="movie-list-rating-left"></span>
+                            <span class="rating-value green">8.2</span>
+                            <span class="movie-list-rating-right"></span>
+                          </div>
+                          <span class="rating-value-count">461 538</span>
+                        </div>
+                      </div>
+                      <div class="movie-list-buttons">
+                        <button type="button" class="movie-list-ticket">
+                          <span>Купить билет</span>
+                        </button>
+
+                        <button type="button" class="movie-list-trailer">
+                          <span>Смотреть трейлер</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-list-item">
+                <a href="#" class="movie-list-rootlink">
+                  <img
+                    class="movie-list-img"
+                    alt="Груз 200"
+                    src="../../assets/images_hw_05/thumb_gruz200_300x450.webp"
+                /></a>
+                <div class="movie-list-content">
+                  <div class="movie-list-upper">
+                    <div class="movie-list-main">
+                      <div class="movie-list-main-title">
+                        <span>Груз 200</span>
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span><i>2007, 1 ч 30 мин</i></span>
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span> <strong>Страна:</strong>Россия</span>
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span><strong>Жанры:</strong> триллер, драма</span>
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span
+                          ><strong>Режиссёр:</strong>
+                          <a href="../../homeworks/hw_06/index.html">
+                            Алексей Балабанов</a
+                          ></span
+                        >
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span
+                          ><strong>В ролях:</strong>
+                          <a href="../../homeworks/hw_06/index.html">
+                            Агния Кузнецова</a
+                          >,
+                          <a href="../../homeworks/hw_06/index.html">
+                            Алексей Полуян</a
+                          ></span
+                        >
+                      </div>
+                    </div>
+                    <div class="movie-list-main-interactive">
+                      <div class="movie-list-rating-root">
+                        <div class="movie-list-rating-column">
+                          <div class="movie-list-rating-value-block">
+                            <span class="movie-list-rating-left"></span>
+                            <span class="rating-value gray">6.8</span>
+                            <span class="movie-list-rating-right"></span>
+                          </div>
+                          <span class="rating-value-count">427 952</span>
+                        </div>
+                      </div>
+                      <div class="movie-list-buttons">
+                        <button type="button" class="movie-list-ticket">
+                          <span>Купить билет</span>
+                        </button>
+
+                        <button type="button" class="movie-list-trailer">
+                          <span>Смотреть трейлер</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="movie-list-item">
+                <a href="#" class="movie-list-rootlink">
+                  <img
+                    class="movie-list-img"
+                    alt="Храброе сердце/Braveheart"
+                    src="../../assets/images_hw_05/thumbBravehearts300x450.webp"
+                /></a>
+                <div class="movie-list-content">
+                  <div class="movie-list-upper">
+                    <div class="movie-list-main">
+                      <div class="movie-list-main-title">
+                        <span>Храброе сердце</span>
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span>Braveheart</span
+                        ><span>, <i>1995, 2 ч 58 мин</i></span>
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span> <strong>Страна:</strong>США</span>
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span
+                          ><strong>Жанры:</strong> история, биография, драма,
+                          военный</span
+                        >
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span
+                          ><strong>Режиссёр:</strong>
+                          <a href="../../homeworks/hw_06/index.html"
+                            >Мэл Гибсон</a
+                          ></span
+                        >
+                      </div>
+                      <div class="movie-list-main-info">
+                        <span
+                          ><strong>В ролях:</strong>
+                          <a href="../../homeworks/hw_06/index.html">
+                            Мэл Гибсон</a
+                          >,
+                          <a href="../../homeworks/hw_06/index.html">
+                            Софи Марсо</a
+                          ></span
+                        >
+                      </div>
+                    </div>
+                    <div class="movie-list-main-interactive">
+                      <div class="movie-list-rating-root">
+                        <div class="movie-list-rating-column">
+                          <div class="movie-list-rating-value-block">
+                            <span class="movie-list-rating-left"></span>
+                            <span class="rating-value green">8.3</span>
+                            <span class="movie-list-rating-right"></span>
+                          </div>
+                          <span class="rating-value-count">332 242</span>
+                        </div>
+                      </div>
+                      <div class="movie-list-buttons">
+                        <button type="button" class="movie-list-ticket">
+                          <span>Купить билет</span>
+                        </button>
+
+                        <button type="button" class="movie-list-trailer">
+                          <span>Смотреть трейлер</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Колонка sidebar -->
+        <aside class="sidebar">
+          <div class="widget">
+            <h3>Жанры</h3>
+            <ul>
+              <li><a href="#">Драма</a></li>
+              <li><a href="#">Комедия</a></li>
+              <li><a href="#">Фантастика</a></li>
+              <!-- ... -->
+            </ul>
+          </div>
+
+          <div class="widget">
+            <h3>Топ фильмов</h3>
+            <ol>
+              <li><a href="#">Зеленая миля</a></li>
+              <li><a href="#">Интерстеллар</a></li>
+              <!-- ... -->
+            </ol>
+          </div>
+
+          <div class="widget">
+            <h3>Подписка</h3>
+            <p>Получайте уведомления о новинках</p>
+            <form>
+              <input type="email" placeholder="Ваш email" />
+              <button type="submit">Подписаться</button>
+            </form>
+          </div>
+        </aside>
+      </article>
+    </main>
+    <!-- Подвал -->
+    <footer>
+      <p>&copy; 2025 КиноПоиск. Все права защищены.</p>
+    </footer>
+  </body>
+</html>
